@@ -18,7 +18,12 @@ struct Time subtract(struct Time t2,struct Time t1){
 }
 void display(struct Time t){
 	cout<<"t3 ";
-	cout << t.h << ":" << t.m << ":" << t.s << endl;
+	if(t.h<10) cout<<"0";
+	cout << t.h<<":";
+	if(t.m<10) cout<<"0";
+	cout << t.m<<":";
+	if(t.s<10) cout<<"0";
+	cout << t.s<< endl;
 }
 
 //create 3 functions
